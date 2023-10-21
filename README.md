@@ -19,9 +19,10 @@ Assignment description:
 
 -Each file name has “GPR0DATA”, followed by either “H” or “L” (indicates either high or low elevation sites), a digit (1,3, or 8) indicating the array number, a decimal followed by another digit (1-8) indicating the feeder number, and ends in “.TXT”. We will add some location information to our concatenated file, specifically the elevation combined with the array number and the feeder number so that each line in our out file will have a total of 5 elements ($lin[0-4]).
 
-Here is an example of what the first two lines should look like (here tab separated, “\t”):
+Here is an example of what the first two lines should look like (here tab separated, “\t”. *these look funky in the "README" file...sorry!):
 
 ID	Date	Time	Array	Feeder
+
 0700ED985B	11/30/17	08:32:41	H1	1
 
 Hint: It will be useful to make a hash of the identified individuals (“CaughtIndex.txt” file), the ‘exists’ function for hashes, and regular expressions/split function.
@@ -37,7 +38,9 @@ Hint: You might want to use some type of counter (+=) to count the number of mat
 Here is an example of what the first 3 lines should look like:
 
 ID	Array	TotalVisits
+
 0700ED8BD1	H3	15
+
 0700ED9084	H3	137
 
 3. Number of birds coming to each array:
@@ -59,7 +62,9 @@ We can write two different subroutines that might be particularly helpful for th
 The outfile should look a little something like this (where F# is the feeder number):
 
 ID	Array	TotalVisits	F1	F2	F3	F4	F5	F6	F7	F8
+
 010799F978	H1	105	15	7	4	3	16	41	12	7
+
 01101719DA	H1	415	85	70	22	36	51	55	30	66
 
 5. Bonus: Birds moving between locations:
