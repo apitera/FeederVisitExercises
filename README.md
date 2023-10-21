@@ -21,7 +21,8 @@ Assignment description:
 
 Here is an example of what the first two lines should look like (here tab separated, “\t”):
 
-ID\tDate\tTime\tArray\tFeeder\n
+ID	Date	Time	Array	Feeder
+
 0700ED985B	11/30/17	08:32:41	H1	1
 
 Hint: It will be useful to make a hash of the identified individuals (“CaughtIndex.txt” file), the ‘exists’ function for hashes, and regular expressions/split function.
